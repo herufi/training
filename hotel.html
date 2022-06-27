@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SAROVA STANLEY HOTEL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="https://as1.ftcdn.net/v2/jpg/01/92/92/74/1000_F_192927453_hBehkPUTcHXSDJKrHKNi0ByOcDAdcwoA.jpg" type="image/x-icon">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: xx-large;
+}
+
+
+</style>
+</head>
+<body class="w3-light-grey">
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-white w3-large">
+  <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Logo</a>
+  <a href="#rooms" class="w3-bar-item w3-button w3-mobile">Rooms</a>
+  <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Book Now</a>
+</div>
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+    <div class="container">
+   
+  <img class="w3-image" src="https://pix10.agoda.net/hotelImages/8546401/0/23ec4a99e046fa3ebe94743b50dd19f0.jpg?ca=9&ce=1&s=1024x768" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+  <div class="centered" style="font-family:arial black;"> THE SAROVA STANLEY HOTEL</div>
+</div><br><br><br>
+ <!-- <div class="w3-display-left w3-padding w3-col l6 m8">-->
+    <div class="w3-container w3-red">
+      <h2><i class="fa fa-bed w3-margin-right"></i>Sarova Stanley</h2>
+    </div>
+    <div class="w3-container w3-white w3-padding-16">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-calendar-o"></i> Check In</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-male"></i> Adults</label>
+            <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-child"></i> Kids</label>
+          <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+          </div>
+        </div>
+        <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
+      </form>
+    </div>
+  </div>
+</header><br><br><br>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;">
+
+  <div class="w3-container w3-margin-top" id="rooms">
+    <h3>Rooms</h3>
+    <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check In</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check Out</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-male"></i> Adults</label>
+      <input class="w3-input w3-border" type="number" placeholder="1">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-child"></i> Kids</label>
+      <input class="w3-input w3-border" type="number" placeholder="0">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-search"></i> Search</label>
+      <button class="w3-button w3-block w3-black">Search</button>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://cf.bstatic.com/xdata/images/hotel/max500/249144365.jpg?k=4f9dc664959adce0730f1a04e7bd75f148a03ef0f8f4109a81350917b5afccec&o=&hp=1" alt="Sarova" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Single Room</h3>
+        <h6 class="w3-opacity">From $99</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://www.uyaphi.com/sites/default/files/styles/image_400x275/public/kenya/lodge/sarova-stanley-hotel-2.jpg?itok=mgXf4uvi" alt="Sarova" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Double Room</h3>
+        <h6 class="w3-opacity">From $149</h6>
+        <p>Queen-size bed</p>
+        <p>25m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="https://severin-travel.de/wp-content/uploads/2018/11/Sarova-Stanley-Nairobi-05.jpg" alt="Sarova" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Deluxe Room</h3>
+        <h6 class="w3-opacity">From $199</h6>
+        <p>Double bed</p>
+        <p>40m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding" id="about">
+    <div class="w3-col l4 12">
+      <h3>About</h3>
+      <h6>
+        THE SAROVA STANLEY is one of Best 5 Star Hotels in Nairobi | Luxury Hotel
+        The Sarova Stanley is rated amongst the best five-star hotels in Nairobi. Situated in Nairobi's Central Business District, 
+        it offers 212 stylish rooms and suites, and dedication to service. The hotel is a stone’s throw away from Kenyatta International Conference Centre (KICC)
+         and close to several popular attractions and business centers. It is also very well located for quick access to areas such as the Nairobi National Park, 
+         Jomo Kenyatta International Airport (JKIA), Wilson Airport, Government Offices and the United Nations offices in Nairobi.
+        
+        The luxury of this heritage hotel delivers a wondrous old world charm whilst offering modern facilities and legendary service, to create Nairobi's
+         top 5-Star hotel experience. This unique experience is replete with indoor and outdoor restaurants, a rooftop swimming pool, courtyard and a glamourous jazz bar.
+          Conferencing and banqueting facilities are available in our heritage spaces and ballroom.
+        
+        The restaurants at Sarova Stanley offer the best of local flavors and a host of international cuisines prepared by our remarkable chefs.
+        
+        Sarova Stanley is a perfect haven for both business and leisure travellers. At Stanley, we strive to provide guests with an experience that’s beyond all expectation. 
+        It all begins with our friendly staff, who will do everything they can to make your stay relaxing and enjoyable. The team at Sarova Stanley looks forward to
+         welcoming you in one of our luxury rooms where you will experience comfort and convenience in this beautiful city of Nairobi..</h6>
+    <p>We accept: <i class="fa fa-credit-card w3-large"></i> 
+      <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> 
+      <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+    </div>
+    <div class="w3-col l8 12">
+
+      
+      <!-- Image of location/map -->
+      <img src="https://photos.hotelbeds.com/giata/original/09/095369/095369a_hb_a_005.jpg" class="w3-image w3-greyscale" style="width:100%;">
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
+    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> Nairobi,Kenya </div>
+    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: 0709111000</div>
+    <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Phone:+25420228850</div>
+  </div>
+
+  <div class="w3-panel w3-red w3-leftbar w3-padding-32">
+    <h6><i class="fa fa-info w3-deep-orange w3-padding w3-margin-right"></i> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</h6>
+  </div>
+
+ 
+
+  <div class="w3-container w3-padding-32 w3-black w3-opacity w3-card w3-hover-opacity-off" style="margin:32px 0;">
+    <h2>Get the best offers first!</h2>
+    <p>Join our newsletter.</p>
+    <label>E-mail</label>
+    <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+    <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+  </div>
+
+  <div class="w3-container" id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions, do not hesitate to ask them.</p>
+    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Nairobi,Kenya<br>
+    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: 0709111000<br>
+    <i class="fa fa-phone w3-text-red" style="width:30px"> </i> Phone: +25420228850<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-padding-32 w3-black w3-center w3-margin-top">
+  <h5>Find Us On</h5>
+  <div class="w3-xlarge w3-padding-16">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="irenewaweru9@gmail.com" target="_blank" class="w3-hover-text-green">irenewaweru9@gmail.com</a></p>
+</footer>
+
+
+</body>
+</html>
